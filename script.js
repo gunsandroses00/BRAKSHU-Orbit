@@ -274,6 +274,7 @@ animate();
  window.addEventListener("resize",resizeCanvas);
 
  canvas.addEventListener("click",(event)=>{
+    console.log("Canvas clicked!");
     const rect=canvas.getBoundingClientRect();
     const mouseX=event.clientX-rect.left;
     const mouseY=event.clientY-rect.top;
