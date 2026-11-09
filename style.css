@@ -1,0 +1,203 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Nova+Script:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000000;
+    color:#e8fff1;
+    font-family: 'Orbitron',sans-serif;
+    min-height: 100vh;
+    border-radius: 100px;
+}
+header{
+    height: 75xp;
+    padding:  0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+.logo{
+    font-family: 'Orbitron',sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+.logo span{
+    color:white;
+}
+.status{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.dot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+main{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: calc(100vh-75px);
+}
+.controls{
+    padding: 30px 22px;
+    background: #000000;
+    border: 1px solid white;
+    border-radius: 40px;
+    margin: 5px;
+    border-right: 1px solid white;
+}
+.controls h2, .universe-heading h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.subtitle{
+    color:white;
+    margin:10px 0 35px;
+}
+.control-group{
+    margin-bottom: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+.control-group label span{
+    color: white;
+}
+input[type="range"]{
+    width: 100%;
+    accent-color: white;
+    cursor:pointer;
+}
+button{
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 70px;
+    background: #53ff9b;
+    color:#000000;
+    font-family: 'Orbitron',sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover{
+    background: rgb(61, 238, 17);
+    transform: translate(-2px);
+}
+button.secondary{
+    background: transparent;
+    color: #53ff9b;
+    border: 2px solid #285b42;
+}
+.info{
+    margin-top: 40px;
+    border-top: 1px solid #285b42;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.info h3{
+    text-align: center;
+    color: #53ff9b;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.info p{
+    text-align: start;
+    margin: 10px 0;
+    color: #53ff9b;
+}
+.info span{
+    color: white;
+}
+.universe{
+    padding: 25px;
+    min-width: 0;
+}
+.universe-heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.universe-heading span{
+    color: #53ff9b;
+    letter-spacing: 2px;
+}
+canvas{
+    width: 100%;
+    height: 80vh;
+    display: block;
+    background: radial-gradient(circle at centre,#10231b 0%,#050a09 70%);
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.legend{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    color: #8ba99a;
+    font-size: 13px;
+}    
+.dot{
+    display: inline-block;
+    width: 8px;        
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.legend span:first-child{
+    color: rgb(61, 238, 17);
+}
+.legend span:nth-child(2){
+    color: rgb(61, 238, 17);
+}
+.legend span:last-child{
+    color: rgb(61, 238, 17);
+}
+@media(max-width: 750px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    .controls{
+        border-right: none;
+        border-bottom: 1px solid #d1f3e7;
+    }
+    canvas{
+        height: 60vh;
+    }
+}
+.planet-details{
+    margin-top:25px;
+    padding:15px;
+    border: 1px solid #285b42;
+    border-radius: 20px;
+}
+.planet-details h3{
+    color:#53ff9b;
+    font-family: 'Orbitron',sans-serif;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.planet-details p{
+    color: #53ff9b;
+    font-size: 13px;
+    margin: 10px 0;
+}
+.planet-details span{
+    color:white;
+}
+
+
